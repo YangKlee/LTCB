@@ -4,7 +4,7 @@ int main()
 {
 	double e,coss = 0;
 	long int x,n, m_gt = 1;
-	x = 1;
+	x = 7;
 	n = 1;
 	e = 15; //e>0
 	while(1)
@@ -18,8 +18,8 @@ int main()
 		}
 		coss += (pow(-1,n)*(pow(x,2*n)/(m_gt)));
 		
-		
-		if(fabs((pow(-1,n)*(pow(x,2*n)/(m_gt)))) > e )
+		printf("%.20lf \n", coss);
+		if(fabs((pow(-1,n)*(pow(x,2*n)/(m_gt)))) < e )
 		{
 			break;
 		}
