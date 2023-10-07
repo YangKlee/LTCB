@@ -3,11 +3,12 @@
 main()
 {
 	int n = 0, m_gt = 1;
-	double coss,x,e,shc;
-	x = 1.0;
-	//e = 5.0;
-	//coss = x;
-	while(n<10)
+	int x,e,shc;
+	double coss;
+	x = 1;
+	//e = 5.0e-10;
+	//coss = 0.0L;
+	while(n <=16)
 	{
 		m_gt = 1;
 		for(int i = 1; i <= 2*n; i++)
@@ -22,5 +23,5 @@ main()
 		
 		
 	}
-	printf("%.20lf", coss);
+	printf("%.20Lf\n", coss);
 }
