@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
 	int n,s1,s2,s3;
