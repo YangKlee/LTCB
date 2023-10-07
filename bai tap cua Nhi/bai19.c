@@ -1,31 +1,25 @@
 #include<stdio.h>
 #include<math.h>
-int main()
+main()
 {
-	double e,coss = 0;
-	long int x,n, m_gt = 1;
-	x = 7;
-	n = 1;
-	e = 15; //e>0
-	while(1)
+	int n = 0, m_gt = 1;
+	double coss,x,e,shc;
+	x = 1.0;
+	//e = 5.0;
+	//coss = x;
+	while(n<10)
 	{
 		m_gt = 1;
-		//printf("n= %d\n", n);
-		for(int i = 1; i <= (2*n); i++ )
+		for(int i = 1; i <= 2*n; i++)
 		{
-			m_gt = m_gt*i;
-			//printf("%d\n", m_gt);
+			m_gt *= i;
 		}
-		coss += (pow(-1,n)*(pow(x,2*n)/(m_gt)));
+		coss += (pow(-1,n)*(pow(x,2*n)/m_gt));
+		//shc = (pow(x,2*n)/m_gt);
 		
-		printf("%.20lf \n", coss);
-		if(fabs((pow(-1,n)*(pow(x,2*n)/(m_gt)))) < e )
-		{
-			break;
-		}
 		n++;
-
-	
+		//printf("%.20lf", coss);
+		
 		
 	}
 	printf("%.20lf", coss);
