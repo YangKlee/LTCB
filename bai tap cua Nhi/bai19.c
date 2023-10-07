@@ -2,10 +2,11 @@
 #include<math.h>
 main()
 {
-	int n = 0, m_gt = 1;
+	long int n = 0, m_gt = 1;
 	int x,e,shc;
 	double coss;
-	x = 1;
+	x = 8
+	;
 	//e = 5.0e-10;
 	//coss = 0.0L;
 	while(n <=16)
