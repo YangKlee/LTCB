@@ -45,7 +45,9 @@ int main()
 	/*
 	Cac bug con ton tai:
 	- Voi n > 20 thi se bi tran du lieu => chua khac phuc
-	Bonus: Cho kieu du lieu unsigned long long int van khong khac phuc duoc, nguyen nhan tran do nhan hai so qua lon voi nhau
+	Bonus: Cho kieu du lieu unsigned long long int van khong khac phuc duoc du pham vi kieu du lieu dap ung duoc
+	, nguyen nhan tran do nhan hai so qua lon voi nhau
+	chi tiet xem trong file tinhgt.cpp
 	
 	*/
 }
