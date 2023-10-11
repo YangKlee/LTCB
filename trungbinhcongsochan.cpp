@@ -2,24 +2,19 @@
 #include<stdio.h>
 int main()
 {
-	int n,num,sum = 0,a = 0;
+	int n,so,sum = 0,d = 0;
 	printf("Nhap day so: ");scanf("%d", &n);
-	while(n!=0)
+	do
 	{
-
-		if(n/10 == 0 && n%10==n)
+		so = n%10;
+		n /= 10;
+		if(so %2 == 0 && so != 0) // Loai so 0 vi so 0 cung chia het cho 2
 		{
-			printf("Trung binh cong so chan trong day la: %d", sum/a);
-			break;
+			sum += so;
+			d++;
 		}
-		num = n%10;
-		n = n/10;
-		if(num %2 == 0)
-		{
-			sum += num;
-			a++;
-		}
-		
 	}
+	while(n!= 0);
+	printf("Trung binh cong so chan trong day la: %d", sum/d);
 	
 }
