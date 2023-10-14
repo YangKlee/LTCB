@@ -2,7 +2,13 @@
 int main()
 {
 	int m, n, d = 0;
-	printf("Nhap m, n (m <n): "); scanf("%d%d", &m, &n);
+	// Bat buoc m phai be hon n, neu khong thi bat nhao lai
+	do
+	{
+		printf("Nhap m, n (m <n): "); scanf("%d%d", &m, &n); 
+	}
+	while(m > n);
+
 	for (int i = m; i <= n; i++)
 	{
 		if (i % 2 == 0 && i % 5 != 0)
