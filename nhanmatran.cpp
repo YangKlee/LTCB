@@ -42,22 +42,22 @@ void nhan_matrix(int a[][100], int b[][100], int m, int n, int ts)
 	}
 	export_matrix(matrix_kq, m , n);
 }
-void det_matrix(int a[][100], int m, int n)
+void det_matrix(int a[][100], int m, int n) // tinh dinh thuc
 {
 	if(m == n )
 	{
 		if(m == 2)
 		{
-			det 
+			///det 
 		}
-		for(int i == 0 ; i < m; i++)
+		//for(int i == 0 ; i < m; i++)
 		{
-			det += pow(1,1+i+1)*a[0][i]*det_matrix(a[i+1][i+1])
+			//det += pow(1,1+i+1)*a[0][i]*det_matrix(a[i+1][i+1])
 		}
 	}
 	else
 	{
-		printf("Dinh thuc chi ton tai tren ma tran vuong nxn")
+		printf("Dinh thuc chi ton tai tren ma tran vuong nxn");
 	}
 }
 int main()

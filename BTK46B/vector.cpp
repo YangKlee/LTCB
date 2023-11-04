@@ -22,7 +22,7 @@ int main()
 	input_vct(vct_b);
 	printf("\nDo dai vector A la: %lf ", dodai_vct(vct_a)) ;
 	printf("\nDo dai vector B la: %lf ", dodai_vct(vct_b));
-	printf("\nGoc giua hai vector la: %lf do ", goc_vct(vct_a,vct_b));
+	printf("\nGoc giua hai vector la: %.2lf do ", goc_vct(vct_a,vct_b));
 	if (check_cungphuong(vct_a, vct_b))
 	{
 		printf("\nHai vecto la hai vecto cung phuong");
@@ -65,7 +65,7 @@ double goc_vct(int a[], int b[])
 {
 	double goc;
 	goc = (double)tich_vo_huong(a, b) / (dodai_vct(a) * dodai_vct(b));
-	return acos(goc);
+	return acos(goc)*(180 / M_PI);
 }
 int check_cungphuong(int a[], int b[])
 {
