@@ -157,5 +157,5 @@ main()
 		}
 	}
 	printf("\n Ma tran A co %d so nguyen to\nMa tran B co %d so nguyen to", dem_ngto(a,n), dem_ngto(b,n));
-	//Source by: Yang - 4651050044
+	//Source by: Nguyen Khanh Duong - 4651050044
 }
