@@ -2,12 +2,6 @@
 int ucln(int a, int b)
 {
 	int temp = 0;
-	if(b > a)
-	{
-		int tg;
-		// hoan doi de tranh bug khi co tinh nhap b > a
-		tg  = a; a = b; b = tg;
-	}
 	if(b == 0) // dieu kien dung cua de quy
 	{
 		return a;
