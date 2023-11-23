@@ -16,7 +16,7 @@ int so_chia_het(int tu, int mau)
 	{
 		privot = mau;
 	}
-	// rut gon bang cach tim so chia het cho tu va mau, i chay tu n den phan tu lon nhat
+	// rut gon bang cach tim so chia het cho tu va mau, i chay tu 2 den phan tu lon nhat
 	for(int i = 2; i <= privot; i++)
 	{
 		if(tu%i == 0 && mau%i == 0)
