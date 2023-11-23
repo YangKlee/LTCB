@@ -34,7 +34,7 @@ main()
 	struct phanso p1;
 	printf("Nhap tu so: ");scanf("%d", &p1.tu);
 	printf("Nhap mau so: ");scanf("%d", &p1.mau);
-	if(so_chia_het(p1.tu, p1.mau))
+	if(so_chia_het(p1.tu, p1.mau) != 0)
 	{
 		printf("\nPhan so rut gon la: %d/%d", p1.tu/so_chia_het(p1.tu, p1.mau),  p1.mau/so_chia_het(p1.tu, p1.mau));
 	}
