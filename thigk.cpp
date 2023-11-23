@@ -7,7 +7,7 @@ void nhap_mang(int a[], int n)
 		scanf("%d", &a[i]);
 	}
 }
-int max_x(int a[], int n, int x)
+void tim_x(int a[], int n, int x)
 {
 	int max = 0, vitri = 0;
 	for(int i = 0; i <n; i++)
@@ -18,26 +18,18 @@ int max_x(int a[], int n, int x)
 			vitri = i;
 		}
 	}
-	return vitri;
+	printf("Vi tri va gia tri cua phan tu lon nhat va nho hon x tuong ung la:  %d va %d", vitri+1 , max);
 }
 main()
 {
-	int n, x, i;
+	int n, x, vitrimax;
 	printf("Nhap n =  ");
 	scanf("%d", &n);
 	int a[n];
 	nhap_mang(a,n);
 	printf("Nhap x = ");
 	scanf("%d", &x);
-	i = max_x(a,n,x);
-	if(a[i] < x)
-	{
-		printf("Vi tri va gia tri cua phan tu lon nhat va nho hon x tuong ung la:  %d va %d", i+1 , a[i]);
-	}
-	else
-	{
-		printf("Khong co phan tu lon nhat va nho hon x");
-	}
+	tim_x(a,n,x);
 	
 
 	
