@@ -25,6 +25,7 @@ int so_chia_het(int tu, int mau)
 		}
 
 	}
+	return 0;
 
 
 }
