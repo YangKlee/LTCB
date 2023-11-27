@@ -24,7 +24,7 @@ void lap_xau(unsigned char c[], int n)
 }
 void vi_tri_nguyen_am(unsigned char c[])
 {
-	printf("\nVi tri cac nguyen am la: ");
+	printf("\nVi tri cac nguyen am");
 	char nguyen_am[] = "UEOAIueoai";
 	for(int i = 0; i < strlen(c); i++)
 	{
