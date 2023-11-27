@@ -79,3 +79,5 @@ int main()
     printf("\nTong toa do vector la: %d", sum_file());
 
 }
+//@Source code by: Nguyễn Khánh Dương aka YangKlee
+// Visit my Github: github.com/YangKlee
