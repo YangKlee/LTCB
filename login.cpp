@@ -13,6 +13,7 @@ int verify_file()
 }
 void create_password(UserLogin user)
 {
+    fflush(stdin);
     printf("Ban chua tao mat khau! Hay tao mat khau !\n");
     printf("Nhap username");
     gets(user.username);
@@ -40,6 +41,7 @@ void login(UserLogin user)
     gets(userInput);
     printf("Nhap password: ");
     fflush(stdin);
+
     gets(passInput);
     if(strcmp(userInput, user.username) == 0 && strcmp(passInput, user.password) == 0)
     {
@@ -66,10 +68,15 @@ int main()
         printf("Vui long lua chon: ");
         printf("\n1. Dang nhap");
         printf("\n2. Quen mat khau");
+        printf("\n");
         scanf("%d", &choose);
         if(choose == 1)
         {
             login(user1);
+        }
+        else if(choose ==2)
+        {
+            create_password(user1);
         }
         
     }
