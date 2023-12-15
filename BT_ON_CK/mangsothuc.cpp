@@ -80,7 +80,6 @@ float sum_readfile()
         float temp;
         fscanf(f, "%f", &temp);
         sum += temp;
-
     }
     fclose(f);
     return sum;
