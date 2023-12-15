@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 void input_temperature(float a[], int n)
 {
     for (int i = 0; i < n; ++i)
@@ -52,6 +53,11 @@ void save_file(float a[], int n)
 {
     FILE *f;
     f = fopen("nhietdo.txt", "w");
+    if(f==NULL)
+    {
+        printf("loi file");
+        exit(0);
+    }
     fprintf(f, "%d\n", n);
     for (int i = 0; i < n; ++i)
     {

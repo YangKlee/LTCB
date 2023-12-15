@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
 void nhapmon(float a[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -63,6 +64,11 @@ void write_point(float a[], int n)
 {
     FILE *f;
     f = fopen("diem.txt", "w");
+    if(f==NULL)
+    {
+        printf("loi file");
+        exit(0);
+    }
     for(int i = 0; i < n; i++)
     {
         fprintf(f, "%f ", a[i]);
@@ -74,6 +80,11 @@ void read_file(float  a[], int n)
 {
     FILE *f;
     f = fopen("diem.txt", "r");
+    if(f==NULL)
+    {
+        printf("loi file");
+        exit(0);
+    }
     for(int i = 0; i < n; i++)
     {
         fscanf(f, "%f", &a[i]);
