@@ -15,7 +15,7 @@ void press_enter_to_continue()
     printf("\nPress enter to continue ... ");
     fflush(stdin);
     gets(enter);
-    //system("cls");
+    system("cls");
 
 }
 void save_file(char account_type[], AccountInfo user)
@@ -131,6 +131,7 @@ int main()
         printf("\nBan chua tao ma PIN, de bao mat vui long tao ma pin de tiep tuc");
         create_pin();
     }
+
     else
     {
         int PIN;
