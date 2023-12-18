@@ -23,7 +23,7 @@ int check_hoa(char a[])
         }
 
     }
-pa
+
     return 0;
 }
 int check_kytu(char a[])
