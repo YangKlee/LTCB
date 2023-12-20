@@ -8,7 +8,7 @@ struct AccountInfo{
     char username[100];
     char password[100];
 };
-struct AccountInfo user1;
+struct AccountIo user1;
 void press_enter_to_continue()
 {
     char enter[0];
@@ -91,8 +91,8 @@ void read_file(char account_type[], AccountInfo &user)
 void menu()
 {
     printf("Chon nen tang de lay tai khoan va mat khau!.");
-    const int number_account = 6;
-    char account_type[number_account][20] = {"Facebook", "Zalo", "Google", "Mihoyo", "Spotify", "QNU University"};
+    const int number_account = 7;
+    char account_type[number_account][20] = {"Facebook", "Zalo", "Google", "Mihoyo", "Spotify", "QNU University", "Github"};
     for(int i = 0; i < number_account; i++)
     {
         printf("\n%d.%s", i+1, account_type[i]);
