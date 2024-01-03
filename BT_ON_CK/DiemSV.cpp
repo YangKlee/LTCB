@@ -101,6 +101,7 @@ float max(float a[], int n)
     }
     return max;
 }
+
 int main()
 {
     int n;
@@ -110,11 +111,12 @@ int main()
     nhapmon(point,n);
     printf("Trung binh cong cac mon la: %.3f", trungbinhcong(point,n));
     convert_to_4(point, point_4, n);
+    printf("Trung binh cong cac mon diem 4 la: %.3f", trungbinhcong(point_4,n));
     printf("\nDiem he 10 la: ");
     export_diem(point, n);
     printf("\nDiem he 4 la: ");
     export_diem(point_4, n);
-    write_point(point,n);
-    read_file(point,n);
+    write_point(point_4,n);
+    read_file(point_4,n);
     printf("\nDiem cao nhat la %.3f", max(point, n));
 }
