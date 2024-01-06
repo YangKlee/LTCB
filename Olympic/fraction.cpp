@@ -59,7 +59,7 @@ int detect_ngto(int n)
     }
     return 1;
 }
-int type_fraction(int tu, int mau)
+int type_fraction(int mau)
 {
     /* value return
      * 1: finite

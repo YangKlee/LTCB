@@ -30,9 +30,9 @@ void xuatmang(int a[])
 void softminmax(int a[])
 {
 	int min;
-	for(int i = 0; i < n-1; i++)
+	for(int i = 0; i < n; i++)
 	{
-		for(int j = i+1; j < n; j++)
+		for(int j = i; j < n; j++)
 		{
 			if(a[i] > a[j])
 			{
@@ -48,9 +48,9 @@ void softminmax(int a[])
 void softmaxmin(int a[])
 {
 	int min;
-	for(int i = 0; i < n-1; i++)
+	for(int i = 0; i < n; i++)
 	{
-		for(int j = i+1; j < n; j++)
+		for(int j = i; j < n; j++)
 		{
 			if(a[i] < a[j])
 			{

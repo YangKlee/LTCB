@@ -2,21 +2,16 @@
 #include<math.h>
 int check_ngto(int n)
 { // Ham kiem tra so nguyen to
-	int cout = 0;
-	for(int i = 2; i < sqrt(n); i++)
+	for(int i = 2; i <= sqrt(n); i++)
 	{
 		if(n%i == 0)
 		{
-			cout++;
+            return 0;
 		}
 	}
-	if(cout == 0)
-	{
-		return 1;
-	}
-	return 0;
+	return 1;
 }
-int phantich_ngto(int n)
+void phantich_ngto(int n)
 {// Ham phan tich thua so ngto bang de quy
 	for(int i = 2; i <= n; i++)
 	{
@@ -26,7 +21,7 @@ int phantich_ngto(int n)
 			{
 				printf("%d ", i);
 				// De quy tach so
-				return phantich_ngto(n/i);		
+				return phantich_ngto(n/i);
 			}
 		}
 	}

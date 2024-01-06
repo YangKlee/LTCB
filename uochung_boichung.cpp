@@ -18,7 +18,7 @@ int bcnn(int a, int b)
 	// thuat toan oclit: BCNN = (a*b)/UCLN
 	return (a*b)/(ucln(a,b));
 }
-main()
+int main()
 {
 	int a,b;
 	printf("Nhap a va b: ");
