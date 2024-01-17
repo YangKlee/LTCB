@@ -76,7 +76,7 @@ float read_and_avg(int a[], int n)
 	return (float)sum/(float)cout;
 	
 }
-main()
+int main()
 {
 	int n;
 	printf("Nhap so phan tu trong mang: ");
