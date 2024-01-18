@@ -69,6 +69,7 @@ void write_point(float a[], int n)
         printf("loi file");
         exit(0);
     }
+    fprintf(f, "%d\n", n);
     for(int i = 0; i < n; i++)
     {
         fprintf(f, "%f ", a[i]);
@@ -76,7 +77,7 @@ void write_point(float a[], int n)
     fclose(f);
 
 }
-void read_file(float  a[], int n)
+void read_file(float  a[])
 {
     FILE *f;
     f = fopen("diem.txt", "r");
@@ -85,6 +86,8 @@ void read_file(float  a[], int n)
         printf("loi file");
         exit(0);
     }
+    int n;
+    fscanf(f, "%d", &n);
     for(int i = 0; i < n; i++)
     {
         fscanf(f, "%f", &a[i]);
@@ -116,7 +119,7 @@ int main()
     export_diem(point, n);
     printf("\nDiem he 4 la: ");
     export_diem(point_4, n);
-    write_point(point_4,n);
-    read_file(point_4,n);
+    write_point(point,n);
+    read_file(point);
     printf("\nDiem cao nhat la %.3f", max(point, n));
 }
