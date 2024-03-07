@@ -82,6 +82,8 @@ float sum_readfile()
         sum += temp;
     }
     fclose(f);
+
+    
     return sum;
 }
 int main()
